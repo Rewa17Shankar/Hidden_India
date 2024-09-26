@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.card{
+    background-image: url(images/pp.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 633px;
+}
+.nav-link{
+    color: #240747;
+    transition: 0.7s;
+}
+.navbar {
+    /* background-color: red; */
+    height: 40px;
+}
+.nav-item {
+    margin-left:40px;
+}
+.nav-link:hover{
+    color: orangered;
+}
+.collapse ul li{
+    /* padding: 10px; */
+    /* margin: 10px; */
+    font-size: 22px;
+    /* justify-content: space-between; */
+    transition: 0.5s ease-in-out;
+}
+.button{
+    margin-top: 0;
+    height:30px;
+    width: 60px;
+    border-radius: 10px;
+    margin-right: 25px;
+    background-color: rgb(252, 250, 250);
+    border: none;
+}
+h1{
+    margin-left: 350px;
+}
+/* Change the color of the navbar items when expanded */  
+  .navbar-collapse.show .navbar-nav .nav-link {
+    color: white !important; /* Makes the text color white */
+  }
+  
+/* Optional: Style the navbar toggler icon */
+  .navbar-toggler {
+    border-color: #fff; /* White border */
+  }
+
+.section-header {
+    margin-bottom: 10px;
+    padding-left: 30px; /* Add padding to push content away from the left edge */
+}
+
+.c {
+    display: flex;
+    justify-content: space-between; /* Space out the header and button sections */
+    align-items: flex-start; /* Align items to the top */
+    background: linear-gradient(to right, #f3f4f6, #e9ecef);
+    padding: 20px; /* Add padding around the content */
+}
+
+.section-header {
+    max-width: 75%; /* Limit width to 75% of the container */
+}
+
+.section-title {
+    margin-bottom: 10px; /* Add space below the heading */
+    font-size: 2rem; /* Larger font size for the heading */
+    color: #2c3e50; /* Darker color for better readability */
+}
+
+.section-description {
+    font-size: 1.2rem; /* Slightly larger font size for the paragraph */
+    color: #555; /* Subtle color for the paragraph text */
+}
+
+.b {
+    display: flex;
+    /* flex-direction: column; Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally within the container */
+    justify-content: center; /* Center buttons vertically within the container */
+    flex-grow: 1; /* Allow the button container to grow and take up available space */
+    margin-left: 20px; /* Add space between the text section and button section */
+    margin-top: 50px;
+    gap: 15px;
+    width: 50px;
+    height: 30px;
+}
+
+.b a button {
+    padding: 10px 20px;
+    /* background-color: #3734c7; Green color representing nature */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 16px; /* Clear and readable font size */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+    margin-bottom: 10px; /* Space between buttons */
+}
+
+/* Hover Effect */
+.b a button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Active Effect */
+.b a button:active {
+    background-color: #388E3C; /* Even darker green when clicked */
+    transform: translateY(1px); /* Button appears pressed */
+}
+
+
+
+.about-section {
+    
+    padding: 50px 0;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .about-section img {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+
+/* Optional: Add a subtle background or border to differentiate the section */
+.section-header {
+    background-color: #f8f9fa; /* Light grey background */
+    border-left: 5px solid #007bff; /* A blue left border */
+    padding: 20px; /* Padding inside the section */
+    border-radius: 5px; /* Rounded corners for a softer look */
+}
+
+.img {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+/* General styles for h2 and p */
+h2 {
+    color: #240747; /* Deep purple color */
+    font-family: ' Zefani', sans-serif; /* Bold, modern font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 36px; /* Larger font size */
+    letter-spacing: 1px; /* Spacing between letters */
+    /* margin-bottom: 10px; Space below each h2 */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+h2:hover {
+    color: orangered; /* Color change on hover */
+}
+
+p {
+    color: #555555; /* Dark gray color */
+    font-family: 'Georgia', serif; /* Classic serif font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Light shadow */
+    font-size: 20px; /* Slightly larger font size */
+    line-height: 1.6; /* Spacing between lines */
+    margin-bottom: 15px; /* Space below each paragraph */
+    font-style: italic; /* Italic style */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+p:hover {
+    color: #240747; /* Color change on hover */
+}
+
+h5.card-title {
+    color: #333399; /* A rich blue color */
+    font-family: 'Verdana', sans-serif; /* Use a stylish sans-serif font */
+    font-size: 24px; /* Increase font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a soft shadow */
+    margin-top: 20px; /* Add space above */
+    margin-bottom: 15px; /* Add space below */
+    text-align: center; /* Center the text */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transition */
+}
+
+h5.card-title:hover {
+    color: orangered; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+/* Container for the map and search engine section */
+#maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  /* Styling for the search engine section */
+  .searchEngine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchEngine .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchEngine .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .searchEngine .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Search form styling */
+  #searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #searchInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  #searchForm button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #searchForm button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Styling for the map section */
+  .col-md-8 iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    #maps {
+      flex-direction: column;
+    }
+  
+    .col-md-8 iframe {
+      margin-top: 20px;
+    }
+  }
+  
+/* Media query for tablets (768px and above) */
+@media (max-width: 768px) {
+    .card {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .navbar {
+        height: auto; /* Allow navbar to expand */
+    }
+
+    h1 {
+        font-size: 50px; /* Reduce font size for smaller screens */
+        margin-left: 0; /* Center-align text */
+        text-align: center; /* Center the text */
+    }
+
+    .button {
+        width: 80px; /* Increase button width */
+        height: 35px; /* Increase button height */
+        margin: 10px 10px; /* Adjust margins */
+    }
+}
+
+/* Media query for mobile devices (576px and below) */
+@media (max-width: 576px) {
+    .card {
+        height: 400px; /* Further reduce height */
+    }
+
+    .navbar {
+        height: auto; /* Allow navbar to expand */
+    }
+
+    .nav-item {
+        margin-left: 20px; /* Reduce margin for smaller screen */
+    }
+
+    h1 {
+        font-size: 40px; /* Further reduce font size */
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center the text */
+    }
+
+    .button {
+        width: 70px; /* Adjust button width */
+        height: 30px; /* Adjust button height */
+        margin: 5px 5px; /* Reduce margins */
+    }
+    
+    .nav-link {
+        font-size: 18px; /* Reduce font size */
+    }
+}
+
+/* Media query for extra small devices (max-width: 360px) */
+@media (max-width: 360px) {
+    h1 {
+        font-size: 35px; /* Smaller font size for very small screens */
+    }
+
+    .button {
+        width: 60px; /* Narrow button width */
+        height: 28px; /* Adjust button height */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Smaller font size for links */
+    }
+}

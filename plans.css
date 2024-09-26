@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .container{
+    background-color: black;
+    width: 100%;
+} */
+ h2 {
+    /* background-color: #ff6f61; Adds a vibrant background color */
+    color: rgb(65, 57, 57); /* White text color for contrast */
+    padding: 15px 25px; /* Adds padding around the text */
+    border-radius: 10px; /* Rounds the corners of the box */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for depth */
+    text-align: center; /* Centers the text */
+    font-family: 'Arial', sans-serif; /* Sets the font style */
+    font-size: 24px; /* Increases the font size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+ h2:hover {
+    transform: scale(1.05); /* Slightly enlarges the text on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Intensifies the shadow on hover */
+}
+
+.carouselExampleDark{
+    width: 500px;
+}
+.carousel-item{
+    /* width: 100%; */
+    height:500px;
+    background-size: cover;
+    background-position: center;
+
+}

@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hidden_India_</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+    <!-- Include Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+<!-- Include Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+ 
+</head>
+<body>
+  <div class="card">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#aboutus">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#maps">Map</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5501/Housing.html">Housing</a>
+            </li> -->
+            <li class="nav-item ">
+              <a class="nav-link " href="#aboutus" role="button"  aria-expanded="false">
+                Aboutus
+              </a>
+            </li>
+          </ul>
+         
+          <!-- <form class="d-flex" role="search"> -->
+            <a href="http://127.0.0.1:5501/login.html">
+              <button class="button">Login</button>
+          </a>
+          <a href="http://127.0.0.1:5501/login2.html">
+              <button class="button">Signin</button>
+          </a>
+          
+          <!-- </form> -->
+        </div>
+      </div>
+      
+    </nav>
+    <div>
+      
+    <h1 style="cursor: default;"><b><span style="color: #FFFFFF; font-size: 100px; font-weight: 333;">Hidden  <span class="he" style="color: RED; font-size: 100px;">I</span><span class="he" style="color: RED; font-size: 75px;">n</span><span style="font-size: 50px; color: #272343;">dia</span></b></h1>
+    </div>
+  </div>
+  <!-- About Website Section -->
+<div class="about-section my-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="display-4 text-primary">Discover the Hidden Gems of India</h2>
+        <p class="lead text-muted">"Hidden India" is your ultimate guide to uncovering the untouched beauty and hidden treasures of India. From the mystical mountains of the Himalayas to the serene backwaters of Kerala, explore the lesser-known destinations that make India truly incredible.</p>
+        <p>Our mission is to take you beyond the usual tourist spots and introduce you to places that are steeped in history, culture, and natural wonders. Whether you are an adventure enthusiast, a history buff, or someone seeking peace and tranquility, "Hidden India" has something special for you.</p>
+        <!-- <a class=""><button class="btn btn-outline-primary btn-lg mt-4">Explore Now</button></a> -->
+      </div>
+      <div class="col-md-6">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/TosaMaidan_Doodhpathri.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/trishul_auli.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/dainkundPeak.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Places Description -->
+  <div class="cc">
+    <div class="c">
+      <div class="section-header w-75"   role="alert">
+        <h2 class="section-title text-left">Idukki, Kerala</h2>
+         <p class="section-description text-left">Mountainous Hills and Dense Forests</p>
+      </div>
+      <div class="b w-25 " >
+        <a href="Housing.html"  ><button class=" bg-primary">Housing</button></a>
+        <a href=""><button class=" bg-primary">Review</button></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3 ">
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Chathurangaara_idukki.jpg">
+            <img class="img" src="images/Chathurangaara_idukki.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Chathurangaara</h5>
+            <p class="card-text">An breathtaking view point. It is a trekking point.</p>
+          </div>
+          <div class="card-footer">
+            <a  href="http://127.0.0.1:5501/idukki1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Periyar_idukki.jpg"><img class="img" src="images/Periyar_idukki.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Periyar National Park</h5>
+            <p class="card-text">This wildlife sanctuary is home to tigers and  elephants.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/idukki1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Cheruthoni_idukki.jpg"><img class="img" src="images/Cheruthoni_idukki.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Cheruthoni Dam</h5>
+            <p class="card-text">TThe Idukki Dam is a double curvature arch dam.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/idukki1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cc"> 
+    <div class="c">
+      <div class="section-header w-75"   role="alert">
+        <h2 class="section-title text-left">Auli, Uttarakhand</h2>
+         <p class="section-description text-left">Auli Bugyal in Garhwali(Meadow)</p>
+      </div>
+      <div class="b w-25 " >
+        <a href="http://127.0.0.1:5501/Housing.html"  ><button class=" bg-primary">Housing</button></a>
+        <a href=""><button class=" bg-primary">Review</button></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/aulli_hotel.jpg"><img class="img" src="images/aulli_hotel.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Hotels</h5>
+            <p class="card-text">The outside view form gallery is outstanding.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/Auli1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/majestic_valley.jpg"><img class="img" src="images/majestic_valley.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Majestic Valley</h5>
+            <p class="card-text">Majestic valley is a very visualize plade</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/Auli1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/trishul_auli.jpg"><img class="img" src="images/trishul_auli.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Trishul Peak</h5>
+            <p class="card-text">It seems like a trishul in shape</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/Auli1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cc">
+    <div class="c">
+      <div class="section-header w-75"   role="alert">
+        <h2 class="section-title text-left">Meghalaya</h2>
+         <p class="section-description text-left">The Land Of Clouds</p>
+      </div>
+      <div class="b w-25 " >
+        <a href="http://127.0.0.1:5501/Housing.html"  ><button class=" bg-primary">Housing</button></a>
+        <a href=""><button class=" bg-primary">Review</button></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3 ">
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href=""><a href="images/cherrapunji_meghalaya.jpg"><img class="img" src="images/cherrapunji_meghalaya.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Cherrapunji</h5>
+            <p class="card-text">In this place hotels are very cheap and clean.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/meghalaya1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Khasi_Hills_meghalya.jpg"><img class="img" src="images/Khasi_Hills_meghalya.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Khasi Hills</h5>
+            <p class="card-text">Majestic valley is a very visualize plade</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/meghalaya1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Meghalaya_1.jpg"><img class="img" src="images/Meghalaya_1.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Shilong</h5>
+            <p class="card-text">It seems like a trishul in shape</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/meghalaya1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cc">
+    <div class="c">
+      <div class="section-header w-75"   role="alert">
+        <h2 class="section-title text-left">Doodhpathri, Kashmir</h2>
+         <p class="section-description text-left">the famous saint of Kashmir, Sheikh ul Aalam Sheikh Noor din Noorani</p>
+      </div>
+      <div class="b w-25 " >
+        <a href="http://127.0.0.1:5501/Housing.html"  ><button class=" bg-primary">Housing</button></a>
+        <a href=""><button class=" bg-primary">Review</button></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3 ">
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/SarbalLake1_doodhpathru.jpg">
+            <img class="img" src="images/SarbalLake1_doodhpathru.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Sarbal Lake</h5>
+            <p class="card-text">Surrounded by tall mountains with an elevation of 4000 metres.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/doodhpathri1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/TosaMaidan_Doodhpathri.jpg"><img class="img" src="images/TosaMaidan_Doodhpathri.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Tosa Maidan</h5>
+            <p class="card-text">Offers views of glacial lakes and colorful flower beds</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/doodhpathri1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/yusmarg_doodhpathri.jpg"><img class="img" src="images/yusmarg_doodhpathri.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Yus Marg</h5>
+            <p class="card-text">It provides heart touching lotic and lentic water bodies.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/doodhpathri1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cc">
+    <div class="c">
+      <div class="section-header w-75"   role="alert">
+        <h2 class="section-title text-left">Khajjar, Dalhousie</h2>
+         <p class="section-description text-left">Mini-Switzerland of India</p>
+      </div>
+      <div class="b w-25 " >
+        <a href="http://127.0.0.1:5501/Housing.html"  ><button class=" bg-primary">Housing</button></a>
+        <a href=""><button class=" bg-primary">Review</button></a>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3 ">
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/KhajjiarLake_.jpg"><img class="img" src="images/KhajjiarLake_.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Khajjira Lake</h5>
+            <p class="card-text">Khajji Naga shrine dedicated to the serpent God.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/khajjar1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Kalatop.jpg"><img class="img" src="images/Kalatop.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Kalatop Sanctuary</h5>
+            <p class="card-text">Kalatop Sanctuary, is a 30.69 km² animal sanctuary.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/khajjar1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/dainkundPeak.jpg"><img class="img" src="images/dainkundPeak.jpg" width="350px" height="253px"  alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">DainKund Peak</h5>
+            <p class="card-text">Lush forests, vibrant flowers and emerald greenvalleys.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5501/khajjar1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Button for more places -->
+  <div class="text-center my-4">
+    <button class="btn btn-primary" onclick="toggleMorePlaces()">More Places across all over India...</button>
+  </div>
+  <!-- More Places Div (Hidden by default) -->
+  <div id="more-places" style="display: none;">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <!-- Additional Place 1 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Place 2 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Place 3 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <!-- Additional Place 1 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Place 2 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Place 3 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <!-- Additional Place 1 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Place 2 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Place 3 -->
+      <div class="col_ w-25 m-5">
+        <div class="card_ h-100">
+          <a href="images/Designer.jpg"><img class="img" src="images/Designer.jpg" width="350px" height="253px" alt=""></a>
+          <div class="card-body">
+            <h5 class="card-title">Additional Place 1</h5>
+            <p class="card-text">Description for additional place 1.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://127.0.0.1:5500/additional_place1.html">More...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <!-- Maps section -->
+  <div id="maps" class="container my-2">
+    <div class="row">
+      <div class="searchEngine col-md-4">
+        <div class="logo">
+            <img src="images/Designer.jpg" style="border-radius: 50%; " >
+            <div class="title">Hidden India</div>
+  
+        </div>
+        <form id="searchForm">
+          <input id="searchInput" style="color: #111;font-size: 1rem;" type="text" placeholder="Search Your Destination..." name="q">
+          <button type="submit"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhNz95l0cBg26Du_3MDGtDlvnX5A7-dtWH2DmkcA7nWli1jkOPoedcFWJGcNce8kzgz4UZDjmR-9f1cNqsMemsiHGV-5Z8uqQXV_6Qi6UG7ZRk1ZIXIIJ3nhnfYlu5sWstc8e4w2RJeCsY-zxQLAwvZ2j9TSOl-7uc33hC8HgJSdA0boiFDWVtETdpdaw" alt=""></button>
+      </form>
+     </div>
+  
+      <!-- Map Section -->
+      <div id="" class="col-md-8">
+        <iframe 
+          src="https://www.openstreetmap.org/export/embed.html?bbox=68.7%2C8.4%2C97.4%2C37.6&amp;layer=mapnik&amp;zoom=5"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+<!-- about us section -->
+<div class="text-center" id="aboutus">
+  <br>
+  <div class="name"><a class="text-center" href=""><b class="text-center"> Rewa Shankar Gupta </b></a></div>
+  <br>
+  <div class="email"><a class="profile" href=""><b> shankarewajii@gmail.com@gmail.com</b></a></div>
+  <br>
+  <div class="linkedin"><a class="profile" href=""><b> Linked-In</b></a></div>
+  <br>
+  <div class="github"><a class="profile" href=""><b> Git-Hub</b></a></div>
+  <br>
+  <div class="instagram"><a class="profile" href=""><b> Instagram</b></a></div>
+  <br>
+  
+</div>
+<div class="text-start text-danger">
+  <h1> Designed By Rewa Shankar Gupta With &hearts; </h1>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous">
+  </script>
+  <script>
+    function toggleMorePlaces() {
+      const morePlaces = document.getElementById("more-places");
+      if (morePlaces.style.display === "none" || morePlaces.style.display === "") {
+        morePlaces.style.display = "block";
+      } else {
+        morePlaces.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    // Initialize the map
+var map = L.map('map').setView([20.5937, 78.9629], 5); // Centered on India with a zoom level of 5
+
+// Add OpenStreetMap tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Function to handle search and zoom to location
+function searchLocation(event) {
+  event.preventDefault();
+
+  var query = document.getElementById('searchInput').value;
+
+  // Use the OpenStreetMap Nominatim service for geocoding
+  fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${query}`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.length > 0) {
+        var lat = data[0].lat;
+        var lon = data[0].lon;
+        var zoomLevel = 12;
+
+        // Set the view to the searched location
+        map.setView([lat, lon], zoomLevel);
+      } else {
+        alert("Location not found. Please try a different search.");
+      }
+    })
+    .catch(error => {
+      console.error("Error fetching location data:", error);
+      alert("An error occurred. Please try again later.");
+    });
+}
+
+// Attach the search function to the form
+document.getElementById('searchForm').addEventListener('submit', searchLocation);
+
+  </script>
+  
+</body>
+</html>

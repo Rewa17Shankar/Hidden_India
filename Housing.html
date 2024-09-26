@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Housing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo and Name Section -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/Designer.jpg" alt="Logo" class="logo me-2" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;>
+                <div>
+                    <div style="font-weight: bold; font-size: 1.2rem;">Hidden India</div>
+                    <!-- <br>
+                    <div class="small text-muted" >email@example.com</div> -->
+                </div>
+            </a>
+
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ContactUs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <h2>Make Your Plans For Housing...</h2>
+        </div>
+        <div>
+            <h1>Choose your destination for Housing</h1>
+        </div>
+        <div class="places">
+            <button id="btn-idukki" type="button" class="btn btn-primary">Idukki</button>
+        <button id="btn-auli" type="button" class="btn btn-secondary">Auli</button>
+        <button id="btn-meghalaya" type="button" class="btn btn-success">Meghalaya</button>
+        <button id="btn-doodhpathri" type="button" class="btn btn-danger">Doodhpathri</button>
+        <button id="btn-khajjar" type="button" class="btn btn-warning">Khajjar</button>
+        <button type="button" class="btn btn-link">...</button>
+        </div>
+    <!-- </div> -->
+
+    <div class="details">
+        <div id="idukki" class="card-group g-10">
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/Hotel_Hillfort_idukki.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/hillifort_idukki2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">HillFort Idukki</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. 
+                </p>
+                <p>4.0 &#9733;  &#128222;6260750199  </p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Start Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+              <label for="end-date" class="form-label">Select End Date:</label>
+              <input type="date" class="form-control" id="booking-date">
+          </div>
+          <p id="date-range-display" class="mt-3"></p>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              <!-- <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div> -->
+            </div>
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/indeevaram_riverview_idukki.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/indeevaram_riverview_idukki2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Indeevaram Riverview</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+                          
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              <!-- <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div> -->
+            </div>
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/Hotel_idukki_castel1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/Hotel_idukki_castel2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Hotel Idukki Castel</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. 
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              <!-- <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="details">
+        <div id="auli"  class="card-group">
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/ski_resort_auli.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/ski_resort_auli2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Ski Resort</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              
+            </div>
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/Madhuban_auli.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/madhuban_auli2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Madhuban Hotel</h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              
+            </div>
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/aulli_hotel.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/Krishna_MountViewResort_Auli.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Aulli Hotel</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer content
+                  than the first to show that equal height action.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+             
+            </div>
+        </div>
+    </div>
+    <div class="details">
+        <div id="meghalaya"  class="card-group">
+          <div class="card m-2">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/JivaResort_meghalaya.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/JivaResort_meghalaya2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Aranya The Merian Resort</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+            </div>
+            
+          </div>
+          <div class="card m-2">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/AranyaTheMerianResort_meghalaya.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/AranyaTheMerianResort_meghalaya1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="card-body">
+              <h5 class="card-title">Jiva Resort Meghalaya</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+              <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+            </div>
+           
+          </div> 
+          <div class="card m-2">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/RishatsngiResort_meghalaya.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/RishatsngiResort_meghalaya2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <div class="card-body">
+            <h5 class="card-title">Rishatsngi Resort</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This card has even longer content
+              than the first to show that equal height action.
+            </p>
+            <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                <h4 class=" ">&#8377;600</h4>
+                <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div class="details">
+        <div id="doodhpathri"  class="card-group">
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/DoodhpathriHeightsHotelAndRestrurant_.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/DoodhpathriHeightsHotelAndRestrurant_1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Doodhpathri Height Hotel And Restrurant</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              
+            </div>
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/RoseladCottage_doodhpathri.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/RoseladCottage_doodhpathri2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img src="images/Designer.jpg" class="d-block w-100" alt="...">
+                      </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Roselad Cottage </h5>
+                <p class="card-text">
+                  This card has supporting text below as a natural lead-in to
+                  additional content.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+            </div>
+            <div class="card m-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/TribeHomeStayDoodhpathri.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/TribeHomeStayDoodhpathri2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              <div class="card-body">
+                <h5 class="card-title">Tribe Home Stay</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This card has even longer content
+                  than the first to show that equal height action.
+                </p>
+                <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+</div>  
+    
+    <div class="details">
+        <div id="khajjar" class="card-group">
+            <div class="card m-2">
+                <div id="carouselKhajjar1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/GrandKailashView1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/GrandKailashView.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselKhajjar1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselKhajjar1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Grand Kailash view</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+                </div>
+                
+            </div>
+            <div class="card m-2">
+                <div id="carouselKhajjar2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/TheHostellerKhajjar.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/TheHostellerKhajjar2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselKhajjar2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselKhajjar2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">The Hosteller</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+                </div>
+                
+            </div>
+            <div class="card m-2">
+                <div id="carouselKhajjar3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/Fortunekhajjar.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/Fortunekhajjar2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselKhajjar3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselKhajjar3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Fortune Khajjar</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p>&#128222;6260750199</p>
+                <p class="card-text"><small class="text-body-secondary"><i class="fas fa-wifi"></i>FreeWifi &#10010;Medical-Facillity  &#10052;AC  &#128250;TV</small></p>
+                          <h4 class=" ">&#8377;600</h4>
+                          <h5>Booking Details</h5>
+        <form>
+            <div class="mb-3">
+                <label for="booking-date" class="form-label">Select Date:</label>
+                <input type="date" class="form-control" id="booking-date">
+            </div>
+            <div class="mb-3">
+                <label for="room-count" class="form-label">Rooms Per Person:</label>
+                <input type="number" class="form-control" id="room-count" min="1" value="1">
+            </div>
+            <button type="button" id="calculate-amount" class="btn btn-secondary">Calculate Amount</button>
+            <p id="amount-display" class="mt-3"></p>
+            <!-- <button type="button" id="confirm-booking" class="btn btn-primary">Book</button> -->
+        </form>
+        <button id="book-now" class="btn btn-primary">Book Now</button>
+        <button id="review" class="btn btn-secondary">Review</button>
+                </div>
+               
+            </div>
+        </div>
+      </div>
+      <div id="review-section" class="mt-5">
+        <h5>Booking History</h5>
+        <ul id="history-list"></ul>
+      </div>
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script type="module" src="Housing.js"></script>
+      
+    </body>
+  </html>
